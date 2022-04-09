@@ -8,13 +8,13 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Ajio {
 
 	public static void main(String[] args) throws InterruptedException {
 		// Launch the URL https://www.ajio.com/
-		ChromeDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.ajio.com/");
 		driver.manage().window().maximize();
